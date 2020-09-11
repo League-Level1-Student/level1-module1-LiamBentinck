@@ -8,8 +8,8 @@ package _01_race_car;
 
 public class RaceCar {
 	private String brand;
-	private int positionInRace;
-	public boolean damaged = false;
+	private static int positionInRace;
+	public static boolean damaged = false;
 	
 	/**
 	 * 
@@ -45,7 +45,7 @@ public class RaceCar {
 	/**
 	 * Brings the car in for a pit stop.
 	 */
-	public void pit() {
+	public static void pit() {
 		if (damaged) {
 			damaged = false;
 			System.out.println("The car has been pitted.");
@@ -57,7 +57,7 @@ public class RaceCar {
 	/**
 	 * Crashes the car. It falls back three positions and needs a pit stop.
 	 */
-	public void crash() {
+	public static void crash() {
 		positionInRace += 3;
 		if (positionInRace > 15) 
 			positionInRace = 15;
@@ -68,7 +68,7 @@ public class RaceCar {
 	/**
 	 * Overtakes the next car in the race.
 	 */
-	public void overtake() {
+	public static void overtake() {
 		if (positionInRace <= 1)
 			System.out.println("The car is already in the lead.");
 		else {
