@@ -44,7 +44,13 @@ class Microwave {
 }
 
 public class Popcorn {
-
+	public static void main(String[] args) {
+		Microwave micro = new Microwave();
+		
+		
+		
+		
+	}
 	private int kernels = 20;
 	private String flavor;
 	private boolean isCooked = false;
