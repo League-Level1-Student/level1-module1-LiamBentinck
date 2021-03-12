@@ -26,7 +26,7 @@ void setup() {
 	panel.add(answer);
 	frame.add(panel);
 	frame.pack();
-
+//test
 	    
 }
 String convert(String input) {
@@ -51,7 +51,7 @@ String convert(String input) {
 @Override
 public void actionPerformed(ActionEvent arg0) {
 	// TODO Auto-generated method stub
-	convert();
+	
 }
 
 }
